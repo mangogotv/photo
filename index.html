@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>舊照轉數位 | 讓珍貴回憶永恆流傳</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .slider-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        /* 簡化的 Slider 視覺效果 */
+        .before-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+        .after-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 2;
+            border-right: 2px solid white;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <!-- Navigation -->
+    <nav class="bg-white py-4 px-8 shadow-sm flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-amber-800">記憶復原</h1>
+        <div class="space-x-6">
+            <a href="#services" class="hover:text-amber-700">服務介紹</a>
+            <a href="#pricing" class="hover:text-amber-700">價錢表</a>
+            <a href="#contact" class="bg-amber-800 text-white px-4 py-2 rounded-lg hover:bg-amber-900">預約諮詢</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="py-20 px-8 bg-white text-center">
+        <h2 class="text-5xl font-extrabold mb-4 text-gray-800">讓你的珍貴回憶，在數位時代永恆流傳</h2>
+        <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">專業高清掃描、人工細緻修復、藝術級上色。我們將那些塵封的舊照片，還原至最完美的樣貌。</p>
+        <a href="#contact" class="bg-amber-800 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-amber-900 transition">立即預約諮詢</a>
+    </header>
+
+    <!-- Before & After Section -->
+    <section class="py-16 px-8 bg-gray-100 text-center">
+        <h3 class="text-3xl font-bold mb-4">Before & After 驚艷對比</h3>
+        <p class="mb-8 text-gray-600">滑動看見我們如何讓舊照片重獲新生</p>
+        <div class="flex justify-center">
+            <div class="slider-container bg-gray-300">
+                <!-- 這裡可以用實際圖片替換 -->
+                <div class="absolute inset-0 flex items-center justify-center text-gray-500 bg-gray-400">
+                    [ 滑動對比功能演示區 ]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Table -->
+    <section id="pricing" class="py-20 px-8 bg-white">
+        <h3 class="text-4xl font-bold text-center mb-16">我們的服務套餐</h3>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <!-- 基礎 -->
+            <div class="border p-8 rounded-2xl text-center hover:shadow-xl transition">
+                <h4 class="text-2xl font-bold mb-4">基礎記錄套餐</h4>
+                <p class="text-amber-800 text-4xl font-bold mb-6"> <span class="text-sm text-gray-400">/張</span></p>
+                <ul class="text-left space-y-3 mb-8 text-gray-600">
+                    <li>✓ 高清平版掃描</li>
+                    <li>✓ 基本去塵處理</li>
+                    <li>✓ 提供雲端下載連結</li>
+                </ul>
+                <button class="w-full py-3 border border-amber-800 text-amber-800 rounded-lg font-bold">選擇套餐</button>
+            </div>
+            <!-- 專業 -->
+            <div class="border-2 border-amber-800 p-8 rounded-2xl text-center bg-amber-50 shadow-lg relative">
+                <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber-800 text-white px-4 py-1 rounded-full text-sm">最受歡迎</span>
+                <h4 class="text-2xl font-bold mb-4">專業修復套餐</h4>
+                <p class="text-amber-800 text-4xl font-bold mb-6"> <span class="text-sm text-gray-400">/張</span></p>
+                <ul class="text-left space-y-3 mb-8 text-gray-600">
+                    <li>✓ 高清平版掃描</li>
+                    <li>✓ 劃痕與污點修復</li>
+                    <li>✓ 人臉特徵優化</li>
+                </ul>
+                <button class="w-full py-3 bg-amber-800 text-white rounded-lg font-bold">選擇套餐</button>
+            </div>
+            <!-- 傳世 -->
+            <div class="border p-8 rounded-2xl text-center hover:shadow-xl transition">
+                <h4 class="text-2xl font-bold mb-4">傳世珍藏套餐</h4>
+                <p class="text-amber-800 text-4xl font-bold mb-6"> <span class="text-sm text-gray-400">/張</span></p>
+                <ul class="text-left space-y-3 mb-8 text-gray-600">
+                    <li>✓ 高清平版掃描</li>
+                    <li>✓ 專業藝術上色</li>
+                    <li>✓ 人工精細修復</li>
+                </ul>
+                <button class="w-full py-3 border border-amber-800 text-amber-800 rounded-lg font-bold">選擇套餐</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-8 bg-amber-900 text-white text-center">
+        <h3 class="text-4xl font-bold mb-4">準備好重現你的回憶了嗎？</h3>
+        <p class="mb-8 text-amber-200">聯繫我們了解更多詳情，或預約專人諮詢。</p>
+        <p class="text-xl">WhatsApp: +852 XXXX XXXX</p>
+        <button class="mt-8 bg-white text-amber-900 px-10 py-4 rounded-full font-bold text-lg">立即預約</button>
+    </section>
+
+    <footer class="py-8 text-center text-gray-400 text-sm">
+        &copy; 2026 記憶復原服務. 版權所有.
+    </footer>
+
+</body>
+</html>
